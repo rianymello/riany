@@ -5,57 +5,159 @@ import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
 const projectsData = [
+ 
+  
   {
-    id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/projects/1.png",
-    tag: ["All", "Web"],
+    id: 16,
+    title: "Modelo de machine leraning pedra papel tesoura",
+    participation:"Criei um modelo de machine learning feito para ganhar 60% das vezes de 4 jogadores pre-criados.",
+    image: "/images/projects/pe3.png",
+    tag: ["All", "Personal"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
+    id: 15,
+    title: "Portifolio Web Designer",
+    participation:"Colaborei na criação de um portifolio usando React.js e Tailwind.",
+    image: "/images/projects/p11.png",
+    tag: ["All", "Personal"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  
+  {
+    id: 17,
+    title: "Portifolio Coding Student",
+    participation:"Colaborei na criação de um portifolio usando HTML, CSS e Javacript",
+    image: "/images/projects/p9.png",
+    tag: ["All", "Personal"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
+    id: 8,
+    title: "Associação de estudantes",  
+    participation:"Atuei como líder de equipe e desenvolvedora durante a execução do site",
+    image: "/images/projects/p4.png",
+    tag: ["All", "Personal"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  
+  {
+    id: 6,
+    title: "Antigo portifolio",
+    
+    participation:"Nesse projeto explorei animações usando CSS e iniciei meus conhecimentos em desenvolvimento web responsivo",
+    image: "/images/projects/p1.png",
+    tag: ["All", "Personal"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
+    id: 7,
+    title: "Woman Pi",
+   
+    participation:"Fui lider do time de desenvolvedoras do projeto para criar a página web e criar uma presença oline para o projeto",
+    image: "/images/projects/p2.png",
+    tag: ["All", "Personal"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
+    id: 14,
+    title: "Smart Routes",
+    participation:"Criei um App usando React Native feito para otimizar rotas e diminuir o congestinoamento nas estradas.",
+    image: "/images/projects/pe3.png",
+    tag: ["All", "Personal"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+ 
+  {
+    id: 10,
+    title: "Meu portifolio pessoal",
+    participation:"Projeto criado com Next.js, Tailwind e Typescript usado pra armazenar apenas meu proejtos pessoais",
+    image: "/images/projects/p6.png",
+    tag: ["All", "Personal"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
+    id: 11,
+    title: "Re-criação de uma rede social",
+    participation:"Recriei a tela de uma rede social que permite comentar e curtir usando React.js",
+    image: "/images/projects/p7.png",
+    tag: ["All", "Personal"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
+    id: 12,
+    title: "Palavras de Paz",
+    participation:"Fui desenvolvedora voluntária nessa Ong, trabalhando com Hooks, Next.js e Typescript. Criei interfaces a partir de designs no figma, e trabalhei na responsividade.",
+    image: "/images/projects/p8.png",
+    tag: ["All", "Personal"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+
+  {
+    id: 13,
+    title: "Artigos",
+    participation:"Artigos escritos por mim sobre inteligência artificial",
+    image: "/images/projects/p10.jpg",
+    tag: ["All", "Personal"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
-    tag: ["All", "Web"],
+    title: "Pegada ecológica",
+    
+    participation:"Nesse projeto eu fui lider da equipe e criei o site usando HTML, CSS e Javascript. ",
+    image: "/images/projects/e2.png",
+    tag: ["All", "School"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
-    id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
-    tag: ["All", "Web"],
+    id: 9,
+    title: "Meu hub de links",
+    participation:"Criei um site com todos os meus links mais importantes usando HTML, CSS e Javascript",
+    image: "/images/projects/p5.png",
+    tag: ["All", "Personal"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
+    title: "Tecnico de informática",
+    
+    participation:"Nesse projeto eu programei o website usando HTML, CSS e Javascript",
+    image: "/images/projects/e4.png",
+    tag: ["All", "School"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  
+  {
+    id: 1,
+    title: "Exercícios da linguagem C",
+    participation:"Fizemos algoritmos simples para resolver problemas propostos",
+    image: "/images/projects/e1.jpg",
+    tag: ["All", "School" ],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
-    id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
+    id: 3,
+    title: "Exercícios de SQL",
+    
+    participation:"Criei base de dados explorando conceitos como tabelas e colunas",
+    image: "/images/projects/e3.png",
+    tag: ["All", "School"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -92,13 +194,13 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
+          name="Personal"
+          isSelected={tag === "Personal"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="School"
+          isSelected={tag === "School"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
@@ -113,7 +215,7 @@ const ProjectsSection = () => {
             <ProjectCard
               key={project.id}
               title={project.title}
-              description={project.description}
+              participation={project.participation}
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
